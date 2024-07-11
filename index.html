@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Simple Calculator</h1>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a beginner web developer learning to build amazing websites.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://deepaliwargantiwar.github.io/my-portfolio">My Portfolio</a></li>
-            <li><a href="https://deepaliwargantiwar.github.io/calculator-project">Simple Calculator</a></li>
-            <!-- Add more projects here -->
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
+    <main>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button class="btn" onclick="appendNumber(7)">7</button>
+                <button class="btn" onclick="appendNumber(8)">8</button>
+                <button class="btn" onclick="appendNumber(9)">9</button>
+                <button class="btn" onclick="appendOperator('+')">+</button>
+                <button class="btn" onclick="appendNumber(4)">4</button>
+                <button class="btn" onclick="appendNumber(5)">5</button>
+                <button class="btn" onclick="appendNumber(6)">6</button>
+                <button class="btn" onclick="appendOperator('-')">-</button>
+                <button class="btn" onclick="appendNumber(1)">1</button>
+                <button class="btn" onclick="appendNumber(2)">2</button>
+                <button class="btn" onclick="appendNumber(3)">3</button>
+                <button class="btn" onclick="appendOperator('*')">*</button>
+                <button class="btn" onclick="appendNumber(0)">0</button>
+                <button class="btn" onclick="appendOperator('.')">.</button>
+                <button class="btn" onclick="clearDisplay()">C</button>
+                <button class="btn" onclick="appendOperator('/')">/</button>
+                <button class="btn" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>&copy; 2024 Simple Calculator</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+    
+
+
